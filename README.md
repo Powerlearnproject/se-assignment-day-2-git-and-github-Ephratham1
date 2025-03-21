@@ -33,6 +33,7 @@
     
 
 ## Detail the steps involved in making your first commit to a GitHub repository. What are commits, and how do they help in tracking changes and managing different versions of your project?
+
 1. select file path on local machine
 2. select file directory
 3. type code . to open vscode and make changes
@@ -41,12 +42,26 @@
 6. Use git status to track changes
 7. lastly use git Push to save files or your code to the github account
 
+
 ## How does branching work in Git, and why is it an important feature for collaborative development on GitHub? Discuss the process of creating, using, and merging branches in a typical workflow.
 
+1. Branching allows for the creation of different storage directories for your files in github. it allows many people to work on one branch and effect changes on it
+
+2. process of creating, using, and merging branches in a typical workflow.
+  -To create a branch you type git branch new_feature in console
+  -Move to a different branch: git checkout new_feature
+  -To merge them back into the main project: git merge new_feature
+   
 
 ## Explore the role of pull requests in the GitHub workflow. How do they facilitate code review and collaboration, and what are the typical steps involved in creating and merging a pull request?
 
+1. git pull origin main	Pulls the latest changes from the main branch of the origin remote.
+2. git pull --rebase	Pulls changes and applies local commits on top for a linear history.
+3. git fetch && git merge	Fetches changes without merging, allowing you to review changes first.
+4. git pull origin feature-branch	Pulls changes from a different branch, feature-branch, on the origin remote.
+
 ## Discuss the concept of "forking" a repository on GitHub. How does forking differ from cloning, and what are some scenarios where forking would be particularly useful?
+
 1.forking is copying someone else's respository to you own github account.
 2.with forking the data that you copy is saved in the github account unlike cloning which save the content of the repository on the local machine.
 3.Forking is idea for team collarboration whereby one can share their respository and no changes are effected on their orginal respository when the next person makes changes
